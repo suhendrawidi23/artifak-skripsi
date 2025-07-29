@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Carbon Management</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">Carbon Management</a></li>
+                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+                <li class="sidebar-nav-item"><a href="#background">Background</a></li>
+                <li class="sidebar-nav-item"><a href="#teori">Theory</a></li>
+                <li class="sidebar-nav-item"><a href="#change">LULC Changes</a></li>
+                <li class="sidebar-nav-item"><a href="#estimation">Carbon Estimation</a></li>
+                <li class="sidebar-nav-item"><a href="#modelling">Factor Identification</a></li>
+            </ul>
+        </nav>
+
+        <!-- Header-->
+        <div id="datetime" style="
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #fff;
+            font-weight: bold;
+            z-index: 999;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        ">
+            Loading time...
+        </div>
+
+
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-4 bordered-text">COASTAL BLUE CARBON MANAGEMENT</h1>
+                <h3 class="mb-5" style="color: rgb(238, 255, 0);">
+                    Exploring the Mysteries of Coastal Carbon Storage in Mahakam Delta, East Kalimantan Province with Remote Sensing Technology
+                </h3>
+                <a class="btn btn-primary btn-xl" href="#background">Lihat Selengkapnya</a>
+            </div>
+        </header>
+
+        <!-- BACKGROUND -->
+        <section class="content-section" style="background-color: #fffee6;" id="background">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h3 class="text-secondary mb-2">Background</h3>
+                        <h1 class="mb-5">🌌 Delta Mahakam sebagai Surga Karbon Biru 🌌</h1>
+                        <p class="lead mb-3">
+                            Delta Mahakam merupakan salah satu kawasan pesisir terbesar di Indonesia, yang menyimpan beragam ekosistem yang berperan penting dalam produksi karbon. Kawasan ini memiliki ekosistem yang sangat beragam, termasuk hutan mangrove, akuakultur, lahan terbangun, hutan non-mangrove, dan badan air. Kelima ekosistem ini bekerja sama untuk menjaga keseimbangan penyimpanan karbon dan membantu mengurangi dampak perubahan iklim.
+                        </p>
+                        <div class="lead bg-primary mb-3">
+                            <p class="p-3 border rounded text-center text-white fw-bold hover-highlight">
+                                EKOSISTEM PESISIR DAPAT MENYIMPAN KARBON 100 KALI LEBIH BANYAK DARIPADA EKOSISTEM TERESTRIAL.
+                            </p>
+                        </div>
+                        <p class="lead mb-5">Penelitian menunjukkan bahwa selain hutan mangrove, ekosistem pesisir lainnya di Delta Mahakam juga berperan dalam menurunkan kadar karbon di atmosfer, melestarikan keanekaragaman hayati, serta mendukung kelangsungan hidup masyarakat pesisir yang bergantung pada sumber daya alam tersebut.</p>
+        
+                        <!-- Kotak Tujuan dengan warna warning dan link -->
+                        <div class="row mt-5">
+                            <div class="col-md-3 mb-4 d-flex justify-content-center">
+                                <div class="card bg-warning shadow-sm border-0">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h5 class="card-title text-dark">Tujuan 1</h5>
+                                            <p class="card-text mb-3">Mengidentifikasi gambaran umum land use/land cover (LULC) di wilayah Delta Mahakam, Provinsi Kalimantan Timur, selama periode 2019 hingga 2024.</p> <!-- Added mb-3 for margin-bottom -->
+                                        </div>
+                                        <a href="#change" class="btn btn-dark mt-auto mt-3">Lihat Selengkapnya</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4 d-flex justify-content-center">
+                                <div class="card bg-warning shadow-sm border-0">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h5 class="card-title text-dark">Tujuan 2</h5>
+                                            <p class="card-text mb-3">Melakukan estimasi coastal blue carbon storage berdasarkan poin (1) pada tahun 2024 menggunakan Integrated Valuation of Ecosystem Services and Trade-Offs (InVEST) berdasarkan komponennya.</p> <!-- Added mb-3 for margin-bottom -->
+                                        </div>
+                                        <a href="#estimation" class="btn btn-dark mt-auto mt-3">Lihat Selengkapnya</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4 d-flex justify-content-center">
+                                <div class="card bg-warning shadow-sm border-0">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h5 class="card-title text-dark">Tujuan 3</h5>
+                                            <p class="card-text mb-3">Mengetahui faktor lain yang berkontribusi terhadap kandungan coastal blue carbon storage (TC, AGC, BGC, SOC, dan DOC) berdasarkan nilai feature importance dari model machine learning pada tahun 2024 dengan ukuran grid 0,5 km × 0,5 km.</p> <!-- Added mb-3 for margin-bottom -->
+                                        </div>
+                                        <a href="#modelling" class="btn btn-dark mt-auto mt-3">Lihat Selengkapnya</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4 d-flex justify-content-center">
+                                <div class="card bg-warning shadow-sm border-0">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h5 class="card-title text-dark">Tujuan 4</h5>
+                                            <p class="card-text mb-3">Membuat web story untuk menyajikan hasil penelitian agar mudah diakses bagi pemangku kebijakan dan masyarakat umum.</p> <!-- Added mb-3 for margin-bottom -->
+                                        </div>
+                                        <a href="#page-top" class="btn btn-dark mt-auto mt-3">Lihat Selengkapnya</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- <a class="btn btn-dark btn-xl" href="#change">Bagaimana perubahan lahan yang terjadi di Delta Mahakam?</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Teori -->
+        <section class="content-section" id="teori">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h2 class="text-secondary mb-0">Theory</h2>
+                    <h2 class="mb-5">Kunci Memahami Hasil Penelitian</h2>
+                </div>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Land Use/Land Cover</div>
+                                    <p class="mb-0" style="text-align: justify;">Land Use Land Cover (LULC) menggambarkan pemanfaatan dan tutupan lahan di suatu wilayah. Land Use berkaitan dengan aktivitas manusia, sementara Land Cover menunjukkan elemen alami atau buatan.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/foto-lulc.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Integrated Valuation of Ecosystem Services and Tradeoffs (InVEST)</div>
+                                    <p class="mb-0" style="text-align: justify;">Perangkat lunak open-source gratis yang digunakan untuk memetakan dan menilai jasa ekosistem, termasuk penyimpanan dan penyerapan karbon (Carbon Storage and Sequestration).</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/foto-karbon.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Machine Learning</div>
+                                    <p class="mb-0" style="text-align: justify;">Machine learning adalah cabang dari artificial intelligence yang berfokus pada pengembangan algoritma yang memungkinkan sistem untuk belajar dari data sehingga mampu meniru kecerdasan manusia.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/foto-ml.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Web Story</div>
+                                    <p class="mb-0" style="text-align: justify;">Web Story dalam konteks penelitian adalah media visual interaktif yang menyajikan hasil penelitian secara ringkas dan menarik sehingga memudahkan informasi untuk akses secara luas.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/foto-web.jpg" alt="..." />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LULC CHANGE -->
+        <section class="content-section text-white text-center" id="change" style="background-color: #94bcd2;">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h2 class="text-primary mb-2">LULC Changes</h2>
+                    <h2 class="mb-5 text-dark">Perubahan Land Use/Land Cover di Delta Mahakam</h2>
+                    <p class="mb-5 text-dark" style="font-size: 18px;">Identifikasi perubahan land use/land cover dilakukan untuk memahami dinamika perubahan ekosistem yang terjadi di lahan pesisir Delta Mahakam, Provinsi Kalimantan Timur. Metode klasifikasi LULC diterapkan menggunakan algoritma machine learning melalui platform Google Earth Engine (GEE) dan dikelompokkan ke dalam beberapa kelas, yaitu hutan mangrove, akuakultur, lahan terbangun, hutan non-mangrove, dan badan air.</p>
+                </div>
+        
+                <!-- Dropdown Tahun -->
+                <div class="mb-4">
+                    <select id="year-select" class="form-select form-select-lg mb-3" onchange="updateContent()">
+                        <option value="2019">LULC Tahun 2019</option>
+                        <option value="2020">LULC Tahun 2020</option>
+                        <option value="2021">LULC Tahun 2021</option>
+                        <option value="2022">LULC Tahun 2022</option>
+                        <option value="2023">LULC Tahun 2023</option>
+                        <option value="2024">LULC Tahun 2024</option>
+                    </select>
+                </div>
+        
+                <div class="row gap-4 gx-4 gx-lg-5" style="display: flex; flex-wrap: wrap;">
+                    <!-- Map LULC -->
+                    <div class="col-lg-6 col-md-12 mb-5 mb-lg-0 p-3" style="flex: 1; background-color: #ebdd8f;">
+                        <h4 class="text-dark"><strong>Peta Land Use/Land Cover (LULC)</strong></h4>
+                        <div id="lulc-map" style="height: 410px;"></div> <!-- Peta LULC akan dimuat di sini -->
+                    </div>
+        
+                    <!-- Chart Tutupan Lahan -->
+<div class="col-lg-6 col-md-5 mb-5 mb-lg-0 p-3" style="flex: 1; background-color: #ebdd8f;">
+    <h4 class="text-dark"><strong>Grafik Luas Area LULC</strong></h4>
+    <canvas id="land-cover-chart" width="800" height="550"></canvas>
+</div>
+                </div>
+        
+                <!-- Interpretasi dalam Kotak -->
+                <div class="row">
+                    <div class="col-lg-12 mt-4 bg-primary text-light">
+                        <div class="mt-3 p-3 rounded-5">
+                            <p id="interpretation-text">Interpretasi hasil pemetaan LULC.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn-dark btn-xl mt-5" href="#estimation">Berapa sebaran <em>carbon storage</em> pada masing-masing jenis tutupan lahan?</a>
+        </section>
+        
+        <!-- CARBON ESTIMATION -->
+        <section class="content-section text-white text-center" id="estimation" style="background-color: #ffffff;">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h2 class="text-primary mb-2">Carbon Estimation</h2>
+                    <h2 class="mb-5 text-dark">Estimasi Karbon Biru Pesisir Menggunakan InVEST</h2>
+                </div>
+
+                <!-- Dropdown Komponen Karbon -->
+                <div class="mb-4">
+                    <select id="carbon-select" class="form-select form-select-lg mb-3" onchange="updateCarbonContent()">
+                        <option value="TC">Total Carbon (TC)</option>
+                        <option value="AGC">Aboveground Carbon (AGC)</option>
+                        <option value="BGC">Belowground Carbon (BGC)</option>
+                        <option value="SOC">Soil Organic Carbon (SOC)</option>
+                        <option value="DOC">Dead Organic Carbon (DOC)</option>
+                    </select>
+                </div>
+
+                <div class="row gap-4 gx-4 gx-lg-5" style="display: flex; flex-wrap: wrap;">
+                    <!-- Map Karbon -->
+                    <div class="col-lg-6 col-md-12 mb-5 mb-lg-0 p-3" style="flex: 1; background-color: #94bcd2;">
+                        <h4 class="text-dark"><strong>Estimasi Karbon Biru dengan InVEST</strong></h4>
+                        <div id="carbon-map" style="height: 410px;"></div> <!-- Peta Karbon akan dimuat di sini -->
+                    </div>
+
+                    <!-- Chart Karbon -->
+                    <div class="col-lg-6 col-md-5 mb-5 mb-lg-0 p-3" style="flex: 1; background-color: #94bcd2;">
+                        <h4 class="text-dark"><strong>Grafik Estimasi Karbon</strong></h4>
+                        <canvas id="carbon-chart" width="800" height="550"></canvas> <!-- Grafik untuk estimasi karbon -->
+                    </div>
+                </div>
+
+                <!-- Interpretasi dalam Kotak -->
+                <div class="row">
+                    <div class="col-lg-12 mt-4 bg-warning text-dark">
+                        <div class="mt-3 p-3 rounded-5">
+                            <p id="carbon-interpretation-text">Interpretasi hasil estimasi karbon biru.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARBON MODELLING -->
+        <section class="content-section text-white text-center" id="modelling" style="background-color: #fff873;">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h2 class="text-primary mb-2">Factor Identification</h2>
+                    <h2 class="mb-5 text-dark">Kontribusi Faktor Lain terhadap Carbon Storage</h2>
+                </div>
+
+                <!-- Dropdown Komponen Karbon -->
+                <div class="mb-4">
+                    <select id="carbon-select2" class="form-select form-select-lg mb-3" onchange="updateCarbonContent2()">
+                        <option value="TC">Total Carbon (TC)</option>
+                        <option value="AGC">Aboveground Carbon (AGC)</option>
+                        <option value="BGC">Belowground Carbon (BGC)</option>
+                        <option value="SOC">Soil Organic Carbon (SOC)</option>
+                        <option value="DOC">Dead Organic Carbon (DOC)</option>
+                    </select>
+                </div>
+
+                <div class="row gap-4 gx-4 gx-lg-5" style="display: flex; flex-wrap: wrap;">
+                    <!-- Map Karbon -->
+                    <div class="col-lg-6 col-md-12 mb-5 mb-lg-0 p-3" style="flex: 1; background-color: #94bcd2;">
+                        <h4 class="text-dark"><strong>Estimasi Karbon Biru dengan Machine Learning</strong></h4>
+                        <div id="carbon-map2" style="height: 410px;"></div> <!-- Peta Karbon akan dimuat di sini -->
+                    </div>
+
+                    <!-- Feature Importance -->
+                    <div class="col-lg-6 col-md-5 mb-5 mb-lg-0 p-3" style="flex: 1; background-color: #94bcd2;">
+                        <h4 class="text-dark"><strong>Feature Importance</strong></h4>
+                        <div id="feature-import" style="height: 360px;"></div> <!-- Grafik feature importance -->
+                        <p id="feature-interpretation" class="bg-light text-dark rounded-3" style="margin-top: 0; padding: 8px;">Interpretasi feature importance.</p>
+                    </div>
+                </div>
+
+                <!-- Interpretasi dalam Kotak -->
+                <div class="row">
+                    <div class="col-lg-12 mt-4 bg-warning text-dark">
+                        <div class="mt-3 p-3 rounded-5">
+                            <p id="carbon-interpretation-text2">Interpretasi hasil estimasi karbon biru.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Callout-->
+        <!-- <section class="callout">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mx-auto mb-5">
+                    Welcome to
+                    <em>your</em>
+                    next website!
+                </h2>
+                <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>
+            </div>
+        </section> -->
+
+        
+        <!-- Call to Action-->
+        <!-- <section class="content-section bg-primary text-white">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
+                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
+            </div>
+        </section> -->
+
+        <!-- Map-->
+        <!-- <div class="map" id="contact">
+            <iframe 
+                src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Politeknik+Statistika+STIS,+Jalan+Otista+No.64,+Jakarta&amp;aq=0&amp;oq=politeknik+statistika&amp;sll=-6.260983,106.898693&amp;sspn=0.013122,0.027417&amp;ie=UTF8&amp;hq=Politeknik+Statistika+STIS&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed">
+            </iframe>
+                <br />
+                <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Politeknik+Statistika+STIS,+Jalan+Otista+No.64,+Jakarta&amp;aq=0&amp;oq=politeknik+statistika&amp;sll=-6.260983,106.898693&amp;sspn=0.013122,0.027417&amp;ie=UTF8&amp;hq=Politeknik+Statistika+STIS&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
+        </div> -->
+        
+        
+        <!-- Footer dengan tema pesisir -->
+        <footer class="footer text-center" style="position: relative; background: linear-gradient(180deg, #0077be 0%, #00c3ff 50%, #ffe08a 100%); color: #333; padding-top: 4rem; padding-bottom: 3rem;">
+            <!-- Ombak SVG -->
+            <div style="position: absolute; top: -1px; left: 0; width: 100%; overflow: hidden; line-height: 0;">
+                <svg viewBox="0 0 1200 100" preserveAspectRatio="none" style="display: block; width: 100%;">
+                    <path d="M0,0 C300,100 900,0 1200,100 L1200,0 L0,0 Z" fill="#0077be"></path>
+                </svg>
+            </div>
+
+            <div class="container px-4 px-lg-5 position-relative">
+                <ul class="list-inline mb-4">
+                    <li class="list-inline-item mx-2">
+                        <a class="social-link rounded-circle d-flex align-items-center justify-content-center" 
+                        href="#!" style="width:50px; height:50px; background:rgba(0,0,0,0.3); color:#fff; transition: all 0.3s;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-2">
+                        <a class="social-link rounded-circle d-flex align-items-center justify-content-center" 
+                        href="#!" style="width:50px; height:50px; background:rgba(0,0,0,0.3); color:#fff; transition: all 0.3s;">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-2">
+                        <a class="social-link rounded-circle d-flex align-items-center justify-content-center" 
+                        href="#!" style="width:50px; height:50px; background:rgba(0,0,0,0.3); color:#fff; transition: all 0.3s;">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="small mb-0" style="opacity: 0.85;">&copy; 2025 Suhendra Widi Prayoga & Robert Kurniawan. All Rights Reserved.</p>
+            </div>
+        </footer>
+        
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+
+    </body>
+</html>
